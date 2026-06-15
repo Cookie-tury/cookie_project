@@ -7,28 +7,148 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <button class="theme-toggle" id="themeToggle" title="切换深色/浅色模式" aria-label="切换深色模式">🌙</button>
-        <div class="avatar">WY</div>
-        <h1 class="name">王雅婷</h1>
-        <p class="tagline">前端开发初学者</p>
-        <div class="contact">
-            <a class="contact-item" href="mailto:2211434545@qq.com">
-                <span class="contact-icon">📧</span>
-                <span>2211434545@qq.com</span>
-            </a>
-            <a class="contact-item" href="#">
-                <span class="contact-icon">🐙</span>
-                <span>GitHub</span>
-            </a>
-        </div>
+    <button class="theme-toggle" id="themeToggle" title="切换深色/浅色模式" aria-label="切换深色模式">🌙</button>
 
-        <div class="skills-section" id="skills">
-            <h2 class="section-title">📚 技能</h2>
+    <main class="page">
+        <!-- ===== 头部 ===== -->
+        <header class="header">
+            <div class="header-top">
+                <div class="avatar">WY</div>
+                <div class="header-info">
+                    <h1>王雅婷</h1>
+                    <p class="subtitle">前端开发工程师 · 计算机科学与技术在读</p>
+                </div>
+            </div>
+            <div class="contact-row">
+                <a href="mailto:2211434545@qq.com">📧 2211434545@qq.com</a>
+                <a href="#">🐙 GitHub</a>
+                <span>📱 138-0000-0000</span>
+                <span>📍 中国 · 北京</span>
+            </div>
+        </header>
+
+        <!-- ===== 关于我 ===== -->
+        <section class="section">
+            <h2 class="section-title">关于我</h2>
+            <p class="about-text">
+                计算机科学与技术专业大四学生，具备扎实的前端开发基础和良好的编程习惯。
+                熟练掌握 HTML、CSS、JavaScript 等前端核心技术，了解 Vue.js 框架及前端工程化工具。
+                对用户体验和界面设计有浓厚兴趣，善于将设计稿转化为高质量的响应式页面。
+                具有较强的自学能力和团队协作精神，期望在前端开发领域持续深耕。
+            </p>
+        </section>
+
+        <!-- ===== 教育经历 ===== -->
+        <section class="section">
+            <h2 class="section-title">教育经历</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <h3>某某大学 · 计算机科学与技术</h3>
+                        <span class="date">2022.09 - 2026.06</span>
+                    </div>
+                    <p class="timeline-sub">本科 · 工学学士</p>
+                    <ul class="timeline-detail">
+                        <li>主修课程：数据结构与算法、操作系统、计算机网络、数据库系统原理、软件工程、Web 前端开发、面向对象程序设计（Java）</li>
+                        <li>GPA 3.5 / 4.0，连续两年获得校级二等奖学金</li>
+                        <li>担任院学生会技术部副部长，负责学院活动网站维护与更新</li>
+                        <li>参加 2024 年全国大学生计算机设计大赛，获得省级二等奖</li>
+                        <li>毕业设计课题：《基于 Vue.js 的在线学习平台前端设计与实现》</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== 实习经历 ===== -->
+        <section class="section">
+            <h2 class="section-title">实习经历</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <h3>某某科技有限公司 · 前端开发实习生</h3>
+                        <span class="date">2024.07 - 2025.03</span>
+                    </div>
+                    <p class="timeline-sub">技术栈：HTML / CSS / JavaScript / Vue.js / Element Plus</p>
+                    <ul class="timeline-detail">
+                        <li>参与公司内部 OA 管理系统前端重构，将老旧 jQuery 页面迁移至 Vue.js 技术栈，独立完成 6 个功能模块的前端开发</li>
+                        <li>使用 Element Plus 组件库搭建统一的 UI 界面，确保 10+ 个页面的视觉风格一致性</li>
+                        <li>封装了日期选择器、表格筛选、弹窗确认等 8 个可复用业务组件，减少重复代码约 30%</li>
+                        <li>配合后端开发人员完成 RESTful API 联调，处理表单校验、状态管理和错误提示等交互逻辑</li>
+                        <li>使用 CSS Flexbox / Grid 实现响应式布局，适配 1920px 至 768px 分辨率的桌面设备</li>
+                        <li>参与代码评审（Code Review），根据团队规范优化代码结构和命名，修复了 15+ 个样式兼容性问题</li>
+                    </ul>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <h3>某某网络工作室 · 前端开发（远程兼职）</h3>
+                        <span class="date">2023.09 - 2024.06</span>
+                    </div>
+                    <p class="timeline-sub">技术栈：HTML / CSS / JavaScript / Bootstrap</p>
+                    <ul class="timeline-detail">
+                        <li>负责客户企业官网的前端页面开发，根据设计师提供的 Figma 设计稿进行像素级还原</li>
+                        <li>使用 Bootstrap 5 响应式框架完成 3 个企业展示型网站的搭建，兼容 PC、平板和手机端</li>
+                        <li>编写了图片懒加载、滚动动画、表单验证等交互功能，提升页面用户体验</li>
+                        <li>与客户直接沟通需求变更，独立完成 2 次网站改版迭代，客户满意度良好</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== 项目经历 ===== -->
+        <section class="section">
+            <h2 class="section-title">项目经历</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <h3>个人博客系统</h3>
+                        <span class="date">2024.10 - 2024.12</span>
+                    </div>
+                    <p class="timeline-sub">技术栈：Vue.js / Vue Router / CSS Grid / Markdown</p>
+                    <ul class="timeline-detail">
+                        <li>独立设计并开发了一个支持文章发布、分类浏览和标签检索的个人技术博客</li>
+                        <li>使用 Vue Router 实现前端路由，包含首页、文章列表、文章详情、关于页面等 5 个页面</li>
+                        <li>集成 Markdown 解析器，支持代码高亮显示，优化了代码块的阅读体验</li>
+                        <li>使用 CSS Grid 实现瀑布流式文章列表布局，在不同屏幕尺寸下自适应列数</li>
+                        <li>实现暗色模式切换功能，通过 CSS 变量和 localStorage 持久化用户偏好</li>
+                    </ul>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <h3>在线图书商城前端</h3>
+                        <span class="date">2024.03 - 2024.06</span>
+                    </div>
+                    <p class="timeline-sub">技术栈：HTML / CSS / JavaScript / LocalStorage</p>
+                    <ul class="timeline-detail">
+                        <li>实现了一个包含商品浏览、购物车管理、订单结算等核心功能的电商前端原型</li>
+                        <li>使用原生 JavaScript 实现购物车增删改查，数据通过 LocalStorage 持久化存储</li>
+                        <li>编写了商品筛选（按价格、分类）和模糊搜索功能，提升商品查找效率</li>
+                        <li>实现了结算页面的表单验证（手机号、地址、邮箱格式校验），提供实时错误提示</li>
+                        <li>页面性能优化：使用事件委托减少 60% 的事件监听器数量，图片懒加载降低首屏加载时间</li>
+                    </ul>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <h3>天气预报小程序</h3>
+                        <span class="date">2023.11 - 2024.01</span>
+                    </div>
+                    <p class="timeline-sub">技术栈：JavaScript / Fetch API / CSS Animation</p>
+                    <ul class="timeline-detail">
+                        <li>调用公开天气 API 获取实时天气数据，支持城市搜索和当前位置自动定位</li>
+                        <li>根据天气状况动态切换背景和图标（晴天、多云、雨天、雪天等 8 种状态）</li>
+                        <li>使用 CSS Animation 实现温度变化的过渡动画和加载骨架屏效果</li>
+                        <li>支持未来 7 天天气预报展示，使用 Chart.js 绘制温度变化折线图</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== 技能 ===== -->
+        <section class="section skills-section" id="skills">
+            <h2 class="section-title">专业技能</h2>
             <div class="skills-list">
                 <div class="skill-item">
                     <div class="skill-header">
-                        <span class="skill-name">HTML</span>
+                        <span>HTML5 / 语义化标签 / 可访问性</span>
                         <span class="skill-percent">90%</span>
                     </div>
                     <div class="progress-bar">
@@ -37,7 +157,7 @@
                 </div>
                 <div class="skill-item">
                     <div class="skill-header">
-                        <span class="skill-name">CSS</span>
+                        <span>CSS3 / Flexbox / Grid / 响应式布局</span>
                         <span class="skill-percent">85%</span>
                     </div>
                     <div class="progress-bar">
@@ -46,7 +166,7 @@
                 </div>
                 <div class="skill-item">
                     <div class="skill-header">
-                        <span class="skill-name">JavaScript</span>
+                        <span>JavaScript (ES6+) / DOM 操作 / AJAX</span>
                         <span class="skill-percent">80%</span>
                     </div>
                     <div class="progress-bar">
@@ -55,41 +175,39 @@
                 </div>
                 <div class="skill-item">
                     <div class="skill-header">
-                        <span class="skill-name">Python</span>
+                        <span>Vue.js / Vue Router / Element Plus</span>
                         <span class="skill-percent">70%</span>
                     </div>
                     <div class="progress-bar">
                         <div class="progress-fill" style="--target-width: 70%;"></div>
                     </div>
                 </div>
-            </div>
-        </div>
-
-        <div class="experience-section">
-            <h2 class="section-title">💼 经历</h2>
-            <div class="experience-list">
-                <div class="experience-card">
-                    <span class="experience-period">2022 - 2026</span>
-                    <div class="experience-title">某某大学 · 计算机科学与技术</div>
-                    <p class="experience-desc">主修计算机科学与技术专业，系统学习数据结构、算法设计、操作系统等核心课程，在校期间参与多个前端项目实践。</p>
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span>Git / VS Code / npm / Webpack 基础</span>
+                        <span class="skill-percent">65%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="--target-width: 65%;"></div>
+                    </div>
                 </div>
-                <div class="experience-card">
-                    <span class="experience-period">2024 - 2025</span>
-                    <div class="experience-title">某某科技公司 · 前端开发实习</div>
-                    <p class="experience-desc">负责公司内部管理系统前端页面开发与维护，使用 HTML/CSS/JavaScript 完成多个业务模块的 UI 实现与交互优化。</p>
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span>Python / Flask 基础 / SQL 基础</span>
+                        <span class="skill-percent">55%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="--target-width: 55%;"></div>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
 
+        <!-- ===== 页脚 ===== -->
         <footer class="footer">
-            <p class="footer-copy">© 2025 王雅婷</p>
-            <div class="footer-socials">
-                <a href="#" title="微博">📢</a>
-                <a href="#" title="知乎">💬</a>
-                <a href="#" title="B站">📺</a>
-            </div>
+            © 2025 王雅婷 · 感谢阅读
         </footer>
-    </div>
+    </main>
 
     <script src="script.js"></script>
 </body>
